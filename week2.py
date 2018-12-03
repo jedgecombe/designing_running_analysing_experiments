@@ -1,7 +1,6 @@
 import logging
 
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 import scipy.stats
 from statsmodels.stats import multitest
@@ -55,6 +54,7 @@ rej, p_vals, _, _ = multitest.multipletests([aa, bb, cc], method='holm')
 for num, pv in enumerate(p_vals):
     descr_p(f'post hoc binom {num}', pv)
 
+# NOTE did not find off the shelf version of G test in python
 
 # two samples, two response categories
 prefs_ab_sex = pd.read_csv('data/prefsABsex.csv')
