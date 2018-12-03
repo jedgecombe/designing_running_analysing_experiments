@@ -5,8 +5,6 @@ import pandas as pd
 from scipy import stats
 import seaborn as sns
 
-
-
 logger = logging.getLogger(__name__)
 logging.basicConfig(
     format='%(asctime)s.%(msecs)03d - %(name)s:%(levelname)s - %(message)s',
