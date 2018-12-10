@@ -35,4 +35,5 @@ plt.show()
 # t test
 t, p = stats.ttest_ind(pgviews[pgviews['Site'] == 'A']['Pages'], pgviews[pgviews['Site'] == 'B']['Pages'],
                        equal_var=True)
+logger.info(f't stat: {t}, p value: {p}')
 
